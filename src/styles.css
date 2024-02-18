@@ -1,3 +1,16 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 .App {
   font-family: sans-serif;
   margin: 20px;
@@ -12,6 +25,15 @@
   border: 1px solid transparent;
   float: left;
   text-align: center;
+  background-color: #1a1a1a;
+  transition: border-color 0.25s;
+}
+.square:hover {
+  border-color: #646cff;
+}
+.square:focus,
+.square:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
 }
 .board-row:after {
   content: "";
